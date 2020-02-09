@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonyBraviaControl", "SonyBraviaControl\SonyBraviaControl.csproj", "{10D8468C-BD5D-4783-9E6E-3E37955290FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SonyBraviaControl", "SonyBraviaControl\SonyBraviaControl.csproj", "{10D8468C-BD5D-4783-9E6E-3E37955290FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonlyBraviaTestApp", "SonlyBraviaTestApp\SonlyBraviaTestApp.csproj", "{0BEE7743-D41E-4B68-A673-0700CFC06FFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonyBraviaTestApp", "SonyBraviaTestApp\SonyBraviaTestApp.csproj", "{0BEE7743-D41E-4B68-A673-0700CFC06FFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

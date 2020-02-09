@@ -12,10 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using SonlyControlTestApp.Properties;
+using SonyBraviaTestApp.Properties;
 using SonyBraviaControl;
 
-namespace SonlyControlTestApp
+namespace SonyBraviaTestApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

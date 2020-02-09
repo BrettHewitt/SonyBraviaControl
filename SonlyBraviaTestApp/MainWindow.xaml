@@ -1,0 +1,71 @@
+﻿<Window x:Class="SonlyControlTestApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SonlyControlTestApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
+		<Style TargetType="Button">
+			<Setter Property="Width" Value="100"/>
+			<Setter Property="Height" Value="30"/>
+			<Setter Property="Margin" Value="5"/>
+		</Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="IP: " Grid.Row="0" Grid.Column="0"/>
+        <TextBox x:Name="IpTextbox" Grid.Row="0" Grid.Column="1" TextChanged="IpTextbox_TextChanged"/>
+        <TextBlock Text="PSK: " Grid.Row="1" Grid.Column="0"/>
+        <TextBox x:Name="PskTextBox" Grid.Row="1" Grid.Column="1" TextChanged="PskTextBox_TextChanged"/>
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<Button Grid.Row="0" Grid.Column="0" Content="Get Power Status" Click="GetPower_OnClick"/>
+			<Button Grid.Row="0" Grid.Column="1" Content="Turn On" Click="TurnOn_Click"/>
+			<Button Grid.Row="0" Grid.Column="2" Content="Turn Off" Click="TurnOff_Click"/>
+
+			<Button Grid.Row="1" Grid.Column="0" Content="Get Volume Info" Click="GetVolumeInfo_Click"/>
+			<Button Grid.Row="1" Grid.Column="1" Content="Turn Up 1" Click="TurnVolumeUpOne_Click"/>
+			<Button Grid.Row="1" Grid.Column="2" Content="Turn Down 1" Click="TurnVolumeDownOne_Click"/>
+			<Button Grid.Row="1" Grid.Column="3" Content="Set to 10" Click="SetVolumeToTen_Click"/>
+
+			<Button Grid.Row="2" Grid.Column="0" Content="Get Input" Click="GetInput_Click"/>
+			<Button Grid.Row="2" Grid.Column="1" Content="HDMI1" Click="SetToHDMIOne_Click"/>
+			<Button Grid.Row="2" Grid.Column="2" Content="HDMI2" Click="SetToHDMITwo_Click"/>
+			<Button Grid.Row="2" Grid.Column="3" Content="HDMI3" Click="SetToHDMIThree_Click"/>
+			
+			<Button Grid.Row="3" Grid.Column="0" Content="Tuner" Click="SetToTuner_Click"/>
+		</Grid>
+		<TextBox IsReadOnly="True" x:Name="OutputText" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" TextWrapping="Wrap" Margin="5" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonyBraviaControl", "SonyBraviaControl\SonyBraviaControl.csproj", "{10D8468C-BD5D-4783-9E6E-3E37955290FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonlyBraviaTestApp", "SonlyBraviaTestApp\SonlyBraviaTestApp.csproj", "{0BEE7743-D41E-4B68-A673-0700CFC06FFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10D8468C-BD5D-4783-9E6E-3E37955290FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10D8468C-BD5D-4783-9E6E-3E37955290FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10D8468C-BD5D-4783-9E6E-3E37955290FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10D8468C-BD5D-4783-9E6E-3E37955290FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BEE7743-D41E-4B68-A673-0700CFC06FFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BEE7743-D41E-4B68-A673-0700CFC06FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BEE7743-D41E-4B68-A673-0700CFC06FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BEE7743-D41E-4B68-A673-0700CFC06FFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {081E9B22-283D-452B-B5C9-67976040D112}
+	EndGlobalSection
+EndGlobal
